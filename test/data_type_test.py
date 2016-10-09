@@ -20,3 +20,9 @@ class DataTypeComparisons(unittest.TestCase):
         For boolean args, data_type should simply return the boolean arg
         """
         self.assertEqual(True, data_type(True))
+
+    def test_integer_type_args_equal_100(self):
+        """
+        For integer type args, data_type should compare the arg to 100.
+        """
+        self.assertEqual('equal to 100', data_type(100))
