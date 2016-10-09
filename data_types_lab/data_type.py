@@ -13,3 +13,8 @@ def data_type(value):
             return 'less than 100'
         else:
             return 'more than 100'
+    elif isinstance(value, list):
+        if len(value) < 3:
+            return None
+        else:
+            return value[2]
