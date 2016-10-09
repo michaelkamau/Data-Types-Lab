@@ -6,3 +6,10 @@ def data_type(value):
         return 'no value'
     elif isinstance(value, bool):
         return value
+    elif isinstance(value, int):
+        if value == 100:
+            return 'equal to 100'
+        elif value < 100:
+            return 'less than 100'
+        else:
+            return 'more than 100'
