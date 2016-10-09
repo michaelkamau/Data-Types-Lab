@@ -26,3 +26,9 @@ class DataTypeComparisons(unittest.TestCase):
         For integer type args, data_type should compare the arg to 100.
         """
         self.assertEqual('equal to 100', data_type(100))
+
+    def test_integer_type_args_less_than_100(self):
+        """
+        For integer type args, data_type should compare the arg to 100.
+        """
+        self.assertEqual('less than 100', data_type(2))
