@@ -14,3 +14,9 @@ class DataTypeComparisons(unittest.TestCase):
         For None args, data_type should return a string 'no_value'
         """
         self.assertEqual('no value', data_type(None))
+
+    def test_boolean_type_args(self):
+        """
+        For boolean args, data_type should simply return the boolean arg
+        """
+        self.assertEqual(True, data_type(True))
