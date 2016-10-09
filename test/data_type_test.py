@@ -44,3 +44,9 @@ class DataTypeComparisons(unittest.TestCase):
         For list type args, data_type should return the 3rd item in the list otherwise None
         """
         self.assertEqual('c', data_type(['a', 'b', 'c']))
+
+    def test_list_type_args_without_third_arg(self):
+        """
+        For list type args, data_type should return the 3rd item in the list otherwise None
+        """
+        self.assertEqual(None, data_type([]))
