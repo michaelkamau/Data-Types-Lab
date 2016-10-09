@@ -38,3 +38,9 @@ class DataTypeComparisons(unittest.TestCase):
         For integer type args, data_type should compare the arg to 100.
         """
         self.assertEqual('more than 100', data_type(101))
+
+    def test_list_type_args_with_third_arg(self):
+        """
+        For list type args, data_type should return the 3rd item in the list otherwise None
+        """
+        self.assertEqual('c', data_type(['a', 'b', 'c']))
