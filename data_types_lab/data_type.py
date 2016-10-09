@@ -4,3 +4,5 @@ def data_type(value):
         return len(value)
     elif isinstance(value, type(None)):
         return 'no value'
+    elif isinstance(value, bool):
+        return value
